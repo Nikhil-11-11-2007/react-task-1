@@ -1,0 +1,496 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+.nav{
+  padding: 1.5vw 3vw;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav h1{
+  font-weight: 400;
+}
+
+.nav-center{
+  align-items: center;
+  gap: 4vw;
+  text-transform: capitalize;
+  display: flex;
+}
+
+.nav-center h4{
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+.nav-center h4:nth-child(1){
+  border: 1px solid #afa9a9;
+  padding: .6vw 1vw;
+  border-radius: 2vw;
+}
+
+.nav button{
+  padding: .77vw 1.5vw;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border: none;
+  border-radius: 2vw;
+}
+
+.nav button i{
+  font-size: 1vw;
+  font-weight: 100;
+}
+
+.nav button h4{
+  font-size: 1vw;
+  font-weight: 100;
+}
+
+.page1{
+  height: 88vh;
+  width: 100%;
+  padding: 1vw 3.5vw;
+  background-color: #ffffff;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  border-radius: 1vw;
+  background-image: url(https://i.pinimg.com/736x/0b/10/b8/0b10b81574fc1ba09bd0756421e1452f.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.container .top{
+  width: 100%;
+  padding-top: 5vw;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5vw;
+}
+
+.container .top h1{
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 3vw;
+  text-align: center;
+  width: 60%;
+}
+
+.container .top p{
+  font-size: 1.3vw;
+  text-align: center;
+  width: 50%;
+  font-weight: 100;
+}
+
+.container .top button{
+  padding: .7vw 1vw;
+  color: #fff;
+  border: none;
+  border-radius: 1.6vw;
+  background-color: #112;
+}
+
+.container .bottom{
+  padding: 2vw;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .bottom .bottom-left{
+  display: flex;
+  align-items: center;  
+}
+
+.container .bottom .bottom-left h4{
+  font-size: 1vw;
+  font-weight: 300;
+  width: 55%;
+  color: #fff;
+}
+
+.container .bottom .bottom-left .users{
+  height: 2.7vw;
+  width: 7.3vw;
+  border-radius: 2vw;
+  background-color: rgba(255, 255, 255, 0.414);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1vw;
+}
+
+.bottom .bottom-left .users img{
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bottom .bottom-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.bottom .bottom-right button{
+  background-color: transparent;
+  border: none;
+}
+
+.bottom .bottom-right button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom .bottom-right button i{
+  color: #fff;
+}
+
+.page2{
+  height: 100vh;
+  width: 100%;
+  padding: 0 3vw;
+  border-bottom: 2px solid #d5d1d1;
+}
+
+.page2-top{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page2-top h3{
+  font-weight: 100;
+  font-size: 1.5vw;
+  width: 50%;
+}
+
+.page2-top button{
+  padding: .5vw 1vw;
+  background-color: transparent;
+  border-radius: 2vw;
+  border: 1px solid #666464;
+}
+
+.page2-center{
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+}
+
+.page2-center .card{
+  height: 100%;
+  width: 31%;
+  border-radius: 3vw;
+  background-color: #f6f8fc;
+  padding: 2vw;
+}
+
+.page2-center .card:nth-child(1){
+  background-color: #0d1a2d;
+  color: #fff;
+}
+
+.page2-center .card #svg{
+  height: 3vw;
+  width: 3.5vw;
+  background-color: #fff;
+}
+
+.page2-center .card #svg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page2-center .card h2{
+  font-weight: 100;
+  margin-top: 1.5vw;
+}
+
+.page2-center .card h2 span{
+  opacity: .4;
+}
+
+.page2-center .card .game-mode{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 3vw;
+}
+
+.page2-center .card .game-mode .btn{
+  height: 2vw;
+  width: 4.5vw;
+  border-radius: 2vw;
+  background-color: #2eb3ff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 .5vw;
+}
+
+.card .game-mode .btn button{
+  padding: .5vw;
+  background-color: #2eb3ff;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.card .game-mode h4{
+  font-weight: 100;
+  opacity: .7;
+}
+
+.page2-center .card:nth-child(2){
+  background-image: url(https://i.pinimg.com/736x/f4/a6/ca/f4a6ca377b3680e48878040b0774037c.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page2-center .card > button{
+  padding: .8vw 1.5vw;
+  border-radius: 2vw;
+  color: #fff;
+  background-color: #ffffff44;
+  backdrop-filter: blur(10px);
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 1.2vw;
+}
+
+.page2-center .card .top {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5vw;
+}
+
+.page2-center .card .top h1{
+  font-size: 3vw;
+}
+
+.page2-center .card .top h1, h4{
+  font-weight: 300;
+}
+
+.page2-center .card .top p{
+  font-size: .9vw;
+  width: 80%;
+}
+
+.page2-center .card .bottom{
+  height: 50%;
+  width: 100%;
+  padding-top: 4vw;
+}
+
+.page2-center .card .bottom .levels{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .4vw 0;
+}
+
+#cen-level{
+  margin-right: 1.6vw;
+}
+
+.page2-center .card .bottom .levels h4{
+  font-size: .9vw;
+  font-weight: 100;
+}
+
+.page2-center .card .bottom .level-cen{
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: .5vw;
+}
+
+
+.level-cen .dott{
+  height: .9rem;
+  width: .9rem;
+  background-color: rgb(4, 180, 250);
+  border-radius: 50%;
+}
+
+.page2-bottom{
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page2-bottom h1{
+  font-weight: 100;
+  font-size: 1.5vw;
+}
+
+.page2-bottom .bottom-down{
+  height: 17vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.page2-bottom .bottom-down .ratings{
+  text-align: center;
+}
+
+.page2-bottom .bottom-down .ratings h1{
+  font-size: 2vw;
+}
+
+.page2-bottom .bottom-down .ratings h4{
+  font-size: 1vw;
+  opacity: .5;
+}
+
+.section{
+  height: 55vh;
+  width: 100%;
+  background-color: rgb(252, 252, 254);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+}
+
+.section .card{
+  height: 100%;
+  width: 31%;
+  border-radius: 3vw;
+  background-color: #294479;
+  padding: 2vw;
+}
+
+.section .card:nth-child(1){
+  background-color: transparent;
+  color: #111;
+}
+
+.section .card:nth-child(3){
+  background-color: transparent;
+  color: #111;
+  background-image: url(https://i.pinimg.com/736x/4a/ed/29/4aed2926ba0f6a74eb26a8f04b75aafa.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section .card #btn{
+  padding: 1vw 2vw;
+  background-color: #ffffff63;
+  border-radius: 2vw;
+}
+
+.section .card >p{
+  color: #fff;
+  font-size: 1.5vw;
+  margin-top: 3vw;
+}
+
+.section .card #svg{
+  height: 3vw;
+  width: 3.5vw;
+  background-color: #fff;
+}
+
+.section .card #svg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section .card h2{
+  font-weight: 100;
+  margin-top: 1.5vw;
+}
+
+.section .card h2 span{
+  opacity: .4;
+}
+
+.section .card .game-mode{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 3vw;
+}
+
+.section .card h4{
+  font-weight: 100;
+  margin-top: 4vw;
+  opacity: .7;
+  border: 1px solid #fff;
+  width: fit-content;
+  padding: 1vw 2vw;
+  border-radius: 1.7vw;
+}
+
+.section .card:nth-child(2){
+  background-image: url(https://i.pinimg.com/1200x/ba/0b/1e/ba0b1e8005d1424ec5f2c63004f078b3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section .card > button{
+  padding: .8vw 1.5vw;
+  border-radius: 2vw;
+  color: #fff;
+  background-color: #ffffff44;
+  backdrop-filter: blur(10px);
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 1.2vw;
+}
