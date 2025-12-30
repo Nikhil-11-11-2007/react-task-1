@@ -7,12 +7,19 @@ const App = () => {
   const [image, setImage] = useState('')
   const [role, setRole] = useState('')
   const [description, setDescription] = useState('')
-  const [allusers, setAllusers] = useState([])
+
+  const localData = JSON.parse(localStorage.getItem("all-users")) || []
+
+  
+  const [allusers, setAllusers] = useState(localData)
 
   function submitHandler(e) {
     e.preventDefault()
-    console.log(allusers);
-    setAllusers([...allusers, { name, image, role, description }])
+    const oldusers = [...allusers]
+    oldusers.push({name, image, role, description})
+    setAllusers(oldusers)
+    localStorage.setItem("all-users", JSON.stringify(oldusers))
+    // setAllusers([...allusers, { name, image, role, description }])
     setName('')
     setImage('')
     setRole('')
@@ -20,10 +27,15 @@ const App = () => {
   }
 
   function deletHandler(idx) {
-    console.log("deleted");
     const copyusers = [...allusers]
-    copyusers.splice(idx,1)
+    const conf = confirm("Are you sure want to delete this")
+    if(conf){
+      copyusers.splice(idx, 1)
+    }else{
+      alert("you cancel it")
+    }
     setAllusers(copyusers)
+    localStorage.setItem("all-users", JSON.stringify(copyusers))
   }
 
   return (
@@ -70,9 +82,9 @@ const App = () => {
         <button className="text-white active:scale-97 cursor-pointer font-medium bg-emerald-700 py-4 text-2xl rounded-2xl"> Create user</button>
       </form>
       <div className="w-[68%] h-[71vh] rounded-2xl p-9 flex gap-7 no-scrollbar overflow-auto bg-[#205295]">
-        {allusers.map((elem,idx)=> {
-          return <Card key={idx} elem={elem} deletHandler={deletHandler} idx={idx}/>
-          
+        {allusers.map((elem, idx) => {
+          return <Card key={idx} elem={elem} deletHandler={deletHandler} idx={idx} />
+
         })}
       </div>
     </div>
@@ -80,3 +92,4 @@ const App = () => {
 }
 
 export default App
+// https://i.pinimg.com/1200x/d5/34/ff/d534ff2923eeba5ae870d19f14d0f7e3.jpg
