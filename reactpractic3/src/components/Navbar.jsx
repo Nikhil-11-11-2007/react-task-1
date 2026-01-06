@@ -16,11 +16,11 @@ const Navbar = (props) => {
             setTheme(e.target.value)
          }}
          type="text"
-         className="border-2 px-3 py-2 mr-5"
-         placeholder="Enter theme"
+         className="border-2 px-3 py-2 text-xl mr-5 w-[25vw] rounded-lg"
+         placeholder="Enter color name to change the theme"
          value={theme}
         />
-        <button>Submit</button>
+        <button className="bg-blue-500 text-2xl text-white px-4 py-2 rounded">Submit</button>
       </form>
     </div>
   )
