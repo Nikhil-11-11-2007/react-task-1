@@ -3,7 +3,7 @@ import Section1 from './Section1'
 
 const Page1 = () => {
   return (
-    <div className='h-screen bg-white text-black px-20'>
+    <div className='h-screen bg-white w-full overflow-hidden text-black px-20'>
       <Navbar />
       <Section1 />
     </div>
